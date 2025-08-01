@@ -18,6 +18,9 @@ Thumbs.db
 *.swo
 *~
 
+# GitHub specific (hidden from public view)
+.github/
+
 # Temporary files
 *.tmp
 *.temp

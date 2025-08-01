@@ -2,33 +2,47 @@
 
 A comprehensive Prolog knowledgebase modeling iconic Call of Duty weapons from 2003 to 2024, implementing recursive rules for weapon progression and unlocking systems.
 
-## Assignment Context
+## Project Overview
 
-This project fulfills **Assignment-1: Implement a Basic Knowledgebase of Your Choice Using Prolog** with:
+This project demonstrates advanced Prolog programming techniques through a sophisticated knowledgebase featuring:
 
-- ✅ **Chosen domain**: Call of Duty weapons (2003-2024)
-- ✅ **Relevant facts**: 121 weapon facts, 49 attachment facts, 26 game mechanics
-- ✅ **Rules describing key concepts**: Weapon categorization, era classification, attachment systems
-- ✅ **Recursive rules**: Weapon unlock progression chains, depth calculation, optimization
-- ✅ **Query capabilities**: 30+ predicates for comprehensive knowledge analysis
+- 🎯 **Comprehensive domain**: Call of Duty weapons ecosystem (2003-2024)
+- 📊 **Rich data model**: 121 weapon facts, 49 attachment facts, 26 game mechanics
+- 🔧 **Advanced rules**: Weapon categorization, era classification, attachment systems
+- 🔄 **Recursive algorithms**: Weapon unlock progression chains, depth calculation, optimization
+- 🔍 **Query capabilities**: 30+ predicates for comprehensive knowledge analysis
 
 ## Project Structure
 
 ```plaintext
 ├── .github/
 │   └── copilot-instructions.md    # Project guidelines and conventions
+├── diagrams/
+│   ├── diagram_horizontal.png     # Horizontal system architecture diagram
+│   ├── diagram_vertical.png       # Vertical system architecture diagram
+│   └── knowledgebase-diagram.md   # Diagram documentation
 ├── docs/
 │   ├── README.md                  # Complete documentation overview
 │   ├── predicate-reference.md     # Comprehensive predicate reference
+│   ├── quick-reference.md         # Quick reference for common predicates
 │   ├── recursive-rules.md         # Detailed recursive algorithm analysis
 │   ├── technical-implementation.md # System architecture and implementation
 │   └── usage-examples.md          # Examples with expected outputs
+├── report/
+│   ├── compile-report.bat         # Windows compilation script
+│   ├── compile-report.sh          # Unix compilation script
+│   ├── lab-report.tex             # LaTeX source for project report
+│   ├── lab-report.pdf             # Compiled project report
+│   └── [auxiliary files]         # LaTeX compilation artifacts
+├── scripts/
+│   ├── demo.pl                    # Feature demonstration script
+│   └── validate.pl                # Quick validation script
 ├── src/
 │   └── weapons.pl                 # Main Prolog knowledgebase
 ├── tests/
-│   └── weapon_tests.pl           # Test queries and examples
-├── demo.pl                       # Feature demonstration script
-├── validate.pl                   # Quick validation script
+│   └── weapon_tests.pl           # Comprehensive test queries
+├── .gitignore                     # Git ignore patterns
+├── LICENSE                        # MIT License with educational notice
 └── README.md                     # This file
 ```
 
@@ -135,14 +149,80 @@ Run the comprehensive test suite:
 ?- run_all_tests.
 ```
 
+For quick validation:
+
+```prolog
+?- consult('scripts/validate.pl').
+```
+
+For feature demonstration:
+
+```prolog
+?- consult('scripts/demo.pl').
+```
+
 ## Documentation
 
-See `docs/` folder for detailed documentation including:
+### Complete Documentation Suite
 
-- Complete predicate reference
-- Recursive rule explanations
-- Technical implementation details
-- Usage examples and expected outputs
+The `docs/` folder contains comprehensive documentation covering all aspects of this knowledgebase:
+
+#### 📖 [**Complete Documentation Overview**](docs/README.md)
+
+- Project statistics and feature overview
+- Navigation guide to all documentation
+- Quick start examples and getting started guide
+- Documentation standards and conventions
+
+#### 🔍 [**Quick Reference**](docs/quick-reference.md)
+
+- Concise reference for commonly used predicates
+- Essential queries for everyday use
+- Fast lookup for core functionality
+
+#### 📚 [**Predicate Reference**](docs/predicate-reference.md)
+
+- Complete listing of all 30+ predicates
+- Detailed syntax, parameters, and return values
+- Comprehensive examples for each predicate
+- Organized by functional categories
+
+#### 🔄 [**Recursive Rules**](docs/recursive-rules.md)
+
+- Detailed explanation of recursive algorithms
+- Implementation analysis and complexity
+- Progression chain analysis
+- Depth calculation and optimization techniques
+
+#### ⚙️ [**Technical Implementation**](docs/technical-implementation.md)
+
+- System architecture and design decisions
+- Data modeling strategies
+- Prolog best practices and conventions
+- Performance considerations and optimizations
+
+#### 💡 [**Usage Examples**](docs/usage-examples.md)
+
+- Comprehensive examples with expected outputs
+- Real-world use cases and scenarios
+- Advanced query combinations
+- Troubleshooting and common patterns
+
+### Visual Documentation
+
+The `diagrams/` folder contains visual representations of the system:
+
+- **System Architecture Diagrams**: Horizontal and vertical views of the knowledgebase structure
+- **Relationship Mappings**: Visual representation of weapon-attachment compatibility
+- **Progression Flows**: Unlock chain visualizations
+
+### Academic Report
+
+The `report/` folder contains the formal project documentation:
+
+- **LaTeX Source**: Complete project report in LaTeX format
+- **Compiled PDF**: Professional presentation of the project
+- **Compilation Scripts**: Cross-platform build tools for the report
 
 ## Prolog Conventions
 
@@ -152,15 +232,12 @@ See `docs/` folder for detailed documentation including:
 - Comprehensive commenting with `%` blocks
 - Logical grouping of related predicates
 
-## Assignment Requirements Met
-
-✅ **Domain Choice**: Call of Duty weapons across 21 years of games (2003-2024)
-✅ **Relevant Facts**: 121 weapon facts + 49 attachment facts + 26 game mechanics
-✅ **Key Concepts**: Weapon types, eras, damage/fire rate classifications, attachment systems, game mechanics
-✅ **Recursive Rules**: 8+ recursive predicates for progression analysis, attachment chains, and optimization
-✅ **Query Capabilities**: 30+ predicates for comprehensive knowledge manipulation and analysis
-✅ **Advanced Features**: Attachment compatibility, weapon optimization, build recommendations, statistical analysis
-
 ## License
 
-Educational project for Prolog programming assignment.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Educational Use
+
+This project demonstrates advanced Prolog programming concepts and techniques. The Call of Duty game series and all related trademarks are property of their respective owners (Activision, Infinity Ward, Treyarch, etc.). This project is not affiliated with or endorsed by any of the aforementioned entities.
+
+The weapon data, game mechanics, and attachment information are based on publicly available information about the Call of Duty video game series and are used here for demonstration of Prolog programming concepts.
