@@ -161,9 +161,16 @@
 
 \end{titlepage}
 
+% Remove page numbering for title page and table of contents
+\pagenumbering{gobble}
+
 % Table of Contents
 \tableofcontents
 \newpage
+
+% Start page numbering from here
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 % Main Content
 \section{Problem Title}
@@ -266,7 +273,9 @@ interconnected layers that handle different aspects of the weapon ecosystem.
 
 \subsection{Weapon Classification Hierarchy}
 
-The weapon classification system is organized in a hierarchical structure that categorizes weapons by type, family relationships, and evolutionary progression, as shown in Figure 2.
+The weapon classification system is organized in a hierarchical structure that
+categorizes weapons by type, family relationships, and evolutionary
+progression, as shown in Figure 2.
 
 \begin{figure}[H]
     \centering
@@ -276,7 +285,9 @@ The weapon classification system is organized in a hierarchical structure that c
 
 \subsection{Weapon Progression System}
 
-The progression system implements complex unlock chains where weapons are interconnected through prerequisite relationships, enabling recursive analysis of progression paths as demonstrated in Figure 3.
+The progression system implements complex unlock chains where weapons are
+interconnected through prerequisite relationships, enabling recursive analysis
+of progression paths as demonstrated in Figure 3.
 
 \begin{figure}[H]
     \centering
@@ -286,7 +297,9 @@ The progression system implements complex unlock chains where weapons are interc
 
 \subsection{Attachment Progression Framework}
 
-The attachment system features its own progression hierarchy where advanced attachments require unlocking prerequisite attachments, creating complex dependency chains illustrated in Figure 4.
+The attachment system features its own progression hierarchy where advanced
+attachments require unlocking prerequisite attachments, creating complex
+dependency chains illustrated in Figure 4.
 
 \begin{figure}[H]
     \centering
@@ -296,7 +309,9 @@ The attachment system features its own progression hierarchy where advanced atta
 
 \subsection{Game Mechanics Evolution}
 
-The evolution of game mechanics across different Call of Duty titles shows the progression of complexity and feature development over the franchise's history, as visualized in Figure 5.
+The evolution of game mechanics across different Call of Duty titles shows the
+progression of complexity and feature development over the franchise's history,
+as visualized in Figure 5.
 
 \begin{figure}[H]
     \centering
