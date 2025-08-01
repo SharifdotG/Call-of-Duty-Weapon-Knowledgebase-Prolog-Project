@@ -1,0 +1,26 @@
+# Prolog specific
+*.exe
+*.o
+*.so
+*.dll
+
+# SWI-Prolog specific
+*.qlf
+*.qly
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor specific
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
