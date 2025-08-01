@@ -18,9 +18,15 @@ This project demonstrates advanced Prolog programming techniques through a sophi
 ├── .github/
 │   └── copilot-instructions.md    # Project guidelines and conventions
 ├── diagrams/
-│   ├── diagram_horizontal.png     # Horizontal system architecture diagram
-│   ├── diagram_vertical.png       # Vertical system architecture diagram
-│   └── knowledgebase-diagram.md   # Diagram documentation
+│   ├── knowledgebase-diagram-horizontal.png      # System architecture (horizontal)
+│   ├── knowledgebase-diagram-vertical.png        # System architecture (vertical)
+│   ├── weapon-type-family-classification-*.png   # Weapon classification diagrams
+│   ├── weapon-progression-family-tree-*.png      # Weapon progression trees
+│   ├── attachment-progression-family-tree-*.png  # Attachment progression trees
+│   ├── game-mechanics-evolution-tree-*.png       # Game mechanics evolution
+│   ├── knowledgebase-diagram.md                  # Diagram documentation
+│   ├── family-tree.md                            # Family tree documentation
+│   └── weapon-family-tree.md                     # Weapon family documentation
 ├── docs/
 │   ├── README.md                  # Complete documentation overview
 │   ├── predicate-reference.md     # Comprehensive predicate reference
@@ -29,11 +35,10 @@ This project demonstrates advanced Prolog programming techniques through a sophi
 │   ├── technical-implementation.md # System architecture and implementation
 │   └── usage-examples.md          # Examples with expected outputs
 ├── report/
-│   ├── compile-report.bat         # Windows compilation script
-│   ├── compile-report.sh          # Unix compilation script
-│   ├── lab-report.tex             # LaTeX source for project report
-│   ├── lab-report.pdf             # Compiled project report
-│   └── [auxiliary files]         # LaTeX compilation artifacts
+│   ├── compile-report.bat         # Windows LaTeX compilation script
+│   ├── compile-report.sh          # Unix LaTeX compilation script
+│   ├── lab-report.tex             # LaTeX source for academic report
+│   └── lab-report.pdf             # Compiled academic report (PDF)
 ├── scripts/
 │   ├── demo.pl                    # Feature demonstration script
 │   └── validate.pl                # Quick validation script
@@ -64,6 +69,15 @@ This project demonstrates advanced Prolog programming techniques through a sophi
    ```
 
 ## Key Features
+
+### Comprehensive Visual Documentation
+
+This project includes an extensive collection of **visual diagrams** that illustrate the complex relationships and structures within the knowledgebase:
+
+- **5 major diagram categories** covering system architecture, classifications, and progressions
+- **10+ individual diagrams** available in both horizontal and vertical orientations
+- **Professional quality visualizations** suitable for academic presentations and reports
+- **Complete documentation** explaining each diagram's purpose and content
 
 ### Weapon Facts
 
@@ -210,19 +224,64 @@ The `docs/` folder contains comprehensive documentation covering all aspects of 
 
 ### Visual Documentation
 
-The `diagrams/` folder contains visual representations of the system:
+The `diagrams/` folder contains comprehensive visual representations of the system:
 
-- **System Architecture Diagrams**: Horizontal and vertical views of the knowledgebase structure
-- **Relationship Mappings**: Visual representation of weapon-attachment compatibility
-- **Progression Flows**: Unlock chain visualizations
+#### System Architecture Diagrams
+
+- **knowledgebase-diagram-horizontal.png**: Horizontal view of the complete system architecture
+- **knowledgebase-diagram-vertical.png**: Vertical view of the complete system architecture
+
+#### Classification and Hierarchy Diagrams
+
+- **weapon-type-family-classification-horizontal.png**: Weapon type classification structure (horizontal)
+- **weapon-type-family-classification-vertical.png**: Weapon type classification structure (vertical)
+
+#### Progression and Evolution Diagrams
+
+- **weapon-progression-family-tree-horizontal.png**: Weapon unlock progression chains (horizontal)
+- **weapon-progression-family-tree-vertical.png**: Weapon unlock progression chains (vertical)
+- **attachment-progression-family-tree-horizontal.png**: Attachment progression dependencies (horizontal)
+- **attachment-progression-family-tree-vertical.png**: Attachment progression dependencies (vertical)
+- **game-mechanics-evolution-tree-horizontal.png**: Game mechanics evolution across titles (horizontal)
+- **game-mechanics-evolution-tree-vertical.png**: Game mechanics evolution across titles (vertical)
+
+#### Documentation Files
+
+- **knowledgebase-diagram.md**: Technical documentation for system architecture diagrams
+- **family-tree.md**: Documentation for family tree and progression diagrams
+- **weapon-family-tree.md**: Detailed weapon family classification documentation
+
+All diagrams are available in both horizontal and vertical orientations for optimal viewing and presentation needs.
 
 ### Academic Report
 
-The `report/` folder contains the formal project documentation:
+The `report/` folder contains the formal project documentation and submission materials:
 
-- **LaTeX Source**: Complete project report in LaTeX format
-- **Compiled PDF**: Professional presentation of the project
-- **Compilation Scripts**: Cross-platform build tools for the report
+- **lab-report.tex**: Complete LaTeX source for the academic project report
+- **lab-report.pdf**: Professionally compiled PDF report ready for submission
+- **compile-report.bat**: Windows batch script for compiling the LaTeX report
+- **compile-report.sh**: Unix shell script for compiling the LaTeX report
+
+The academic report includes:
+
+- Comprehensive project analysis and technical documentation
+- All five system diagrams integrated into the document
+- Sample input/output demonstrations with Prolog code examples
+- Technical challenges and solutions discussion
+- Educational value assessment and future work recommendations
+
+To compile the report:
+
+```bash
+# On Windows
+cd report
+.\compile-report.bat
+
+# On Unix/Linux/macOS
+cd report
+chmod +x compile-report.sh
+./compile-report.sh
+```
 
 ## Prolog Conventions
 

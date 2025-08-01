@@ -246,7 +246,7 @@ interconnected layers that handle different aspects of the weapon ecosystem.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{diagrams/diagram_vertical.png}
+    \includegraphics[width=0.8\textwidth]{../diagrams/knowledgebase-diagram-vertical.png}
     \caption{Call of Duty Weapon Knowledgebase System Architecture}
 \end{figure}
 
@@ -263,6 +263,46 @@ interconnected layers that handle different aspects of the weapon ecosystem.
 \textbf{Query Interface Layer} offers comprehensive access through 30+ predicates organized into basic queries (gun\_type/2, gun\_damage/2), classification queries (modern\_era\_guns/1, primary\_weapon/1), attachment queries (compatible\_attachments/2, stealth\_attachments/1), and optimization queries (optimal\_damage\_build/2, versatile\_weapons/1).
 
 \textbf{Advanced Analysis Layer} provides statistical analysis capabilities for counting weapons by type and identifying patterns, along with build optimization algorithms for recommending optimal weapon configurations for specific scenarios.
+
+\subsection{Weapon Classification Hierarchy}
+
+The weapon classification system is organized in a hierarchical structure that categorizes weapons by type, family relationships, and evolutionary progression, as shown in Figure 2.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../diagrams/weapon-type-family-classification-vertical.png}
+    \caption{Weapon Type Family Classification Structure}
+\end{figure}
+
+\subsection{Weapon Progression System}
+
+The progression system implements complex unlock chains where weapons are interconnected through prerequisite relationships, enabling recursive analysis of progression paths as demonstrated in Figure 3.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../diagrams/weapon-progression-family-tree-vertical.png}
+    \caption{Weapon Progression Family Tree and Unlock Chains}
+\end{figure}
+
+\subsection{Attachment Progression Framework}
+
+The attachment system features its own progression hierarchy where advanced attachments require unlocking prerequisite attachments, creating complex dependency chains illustrated in Figure 4.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../diagrams/attachment-progression-family-tree-vertical.png}
+    \caption{Attachment Progression Family Tree and Dependencies}
+\end{figure}
+
+\subsection{Game Mechanics Evolution}
+
+The evolution of game mechanics across different Call of Duty titles shows the progression of complexity and feature development over the franchise's history, as visualized in Figure 5.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../diagrams/game-mechanics-evolution-tree-vertical.png}
+    \caption{Game Mechanics Evolution Across Call of Duty Titles}
+\end{figure}
 
 \section{Sample Input/Output}
 
