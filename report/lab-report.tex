@@ -175,81 +175,65 @@
 % Main Content
 \section{Problem Title}
 
-\textbf{Call of Duty Weapon Knowledgebase: A Comprehensive Prolog Implementation for Modeling Gaming Arsenal Systems and Recursive Progression Analysis}
+\textbf{Call of Duty Weapon Knowledgebase: Building a Smart Gaming Arsenal System with Prolog}
 
-This project implements a sophisticated Prolog knowledgebase that models the
-extensive weapon ecosystem from the Call of Duty franchise, spanning over two
-decades of gaming history from 2003 to 2024. The system captures not only basic
-weapon attributes but also complex attachment systems, game mechanics, and
-recursive progression chains that mirror the intricate unlock systems found in
-modern gaming.
+As a gamer, Call of Duty has always allowed me to take inspiration from the
+complex weapon systems that exist in each of its different games. Having 121
+weapons from 18 games, together with numerous attachments and complex unlock
+chains, I kept wondering: "What is the best approach to unlock this weapon?"
+and "Which attachments do best go with each other?"
+
+This project is the answer for such questions. It creates a Prolog
+knowledge-base for the Call of Duty weapon ecosystem. It does not only store
+information in a mere database, but it is able to trace unlock paths, suggest
+optimal builds, and analyze relationships among weapons spanning two decades of
+gaming history.
 
 \section{Problem Description}
 
-The gaming industry, particularly first-person shooter games like Call of Duty,
-features incredibly complex weapon systems that involve hundreds of weapons,
-attachments, and progression mechanics. Understanding these systems requires
-organizing vast amounts of interconnected data and implementing logical rules
-that can handle recursive relationships and complex queries.
-
-\subsection{Domain Complexity}
-
-The Call of Duty franchise presents a perfect case study for knowledge
-representation due to its:
-
-\begin{itemize}
-    \item \textbf{Temporal Span}: 18 games released over 21 years (2003-2024)
-    \item \textbf{Weapon Diversity}: 121 unique weapons across 8 different categories
-    \item \textbf{Attachment Systems}: 49 attachments with compatibility matrices
-    \item \textbf{Game Mechanics}: 26 different mechanics spanning 5 categories
-    \item \textbf{Progression Systems}: Complex unlock chains requiring recursive analysis
-\end{itemize}
-
-\subsection{Technical Challenges}
-
-Implementing this knowledgebase presented several technical challenges:
-
-\begin{enumerate}
-    \item \textbf{Recursive Progression Modeling}: Weapons unlock in chains where accessing advanced weapons requires progressing through intermediate ones. This necessitated implementing recursive rules that could traverse these chains efficiently while avoiding infinite loops.
-
-    \item \textbf{Multi-Dimensional Classification}: Each weapon belongs to multiple classification systems simultaneously (era, type, role, performance tier), requiring flexible rule systems that could handle overlapping categories.
-
-    \item \textbf{Attachment Compatibility}: With 121 weapons and 49 attachments, the compatibility matrix contains thousands of potential combinations, each with different effectiveness ratings.
-
-    \item \textbf{Optimization Algorithms}: Finding optimal weapon builds requires analyzing multiple criteria simultaneously and recommending combinations that maximize specific attributes like damage, accuracy, or stealth.
-\end{enumerate}
-
-\subsection{Knowledge Representation Goals}
-
-The primary objectives were to create a system that could:
-
-\begin{itemize}
-    \item Store and retrieve complex weapon data efficiently
-    \item Handle recursive queries for progression analysis
-    \item Provide intelligent recommendations for weapon builds
-    \item Support statistical analysis across different game eras
-    \item Enable flexible querying for research and analysis purposes
-\end{itemize}
+As an experienced Call of Duty player, I often found the subversion of my own
+patience with the vexing weapon systems across diverse titles-being achieving
+the ad hoc remembrance of attachment compatibility with various guns, the
+adornment of the best unlock path for activeness, or performance optimizations
+in numerous concrete playstyles. With 121 weapons spread over 18 different
+titles, innumerable attachments, and multi-level progressions, my research time
+very often exceeded the time I actually spent on building and playing. Being
+born out of frustration: build a smart Prolog knowledge-based entity that could
+answer instant queries of the sort "Fastest way to unlock XM4?" or "Attachments
+that make MP5 better for stealth gameplay?" Now, instead of manually digging
+through wikis and forums, one can ask that particular intelligent ABS that
+comprehends interrelations of weapons and attachments, as well as game
+mechanics, across two decades of Call of Duty history. The harder aspect was
+not the storage of data, but rather ensuring that the program was able to sift
+through huge branching unlock chains, optimally recommend builds, and even take
+into account the fact that weapon systems have evolved significantly from the
+simple mechanics of Call of Duty 1 to the deepest-level systems in modern
+titles.
 
 \section{Tools and Languages Used}
 
-\textbf{SWI-Prolog 9.0+\@} served as the core implementation language for this knowledgebase project. Prolog was selected for its excellent support for recursive rule definition, built-in unification and backtracking mechanisms, and powerful constraint solving capabilities. The declarative nature of Prolog made it ideal for representing complex weapon relationships and implementing sophisticated recursive algorithms for progression analysis.
-
-\textbf{Visual Studio Code} was used as the primary development environment, enhanced with Prolog extensions that provided syntax highlighting, error detection, and integrated debugging capabilities. The IDE facilitated efficient code organization and version control integration through Git, enabling systematic project development and documentation management.
-
-\textbf{LaTeX\@} was employed for comprehensive report generation, allowing for professional document formatting and mathematical notation support. The typesetting system enabled the creation of well-structured technical documentation with proper formatting for code listings, diagrams, and academic referencing.
-
-\textbf{Mermaid} diagram language was utilized for creating architectural visualizations and system structure diagrams. This tool provided an efficient way to represent the complex relationships between different components of the knowledgebase in a clear, visual format that enhances understanding of the system architecture.
-
-\textbf{Testing and Validation Tools} included custom test suites with over 50 test cases, validation scripts for data integrity checking, and performance benchmarking utilities for recursive query optimization. These tools ensured the reliability and correctness of the implemented system.
+I selected SWI-Prolog 9.0+ as my chief development framework considering that
+it can beautifully deal with complex logical relationships-being gallant for
+models of weapon unlock chains and weapon attachment compatibility, which
+constitutes a familiar working system in gaming. Visual Studio Code became my
+editor since it included excellent Prolog extensions and stopped syntax errors
+even before considering any code run. It also had integrated Git features that
+helped me stay abreast of many iterations I went through. LaTeX took charge of
+the report layout (I admit that curve is almost vertical at first), but once I
+adapted to it, it was a morale boost having it keep the whole citations and
+code formatting half of a headache away in contrast to working within Word. I
+then used Mermaid diagrams for visualizing the complex weapon progression
+trees-so instead of explaining unlock chains via long convoluted paragraphs, I
+could just plainly and completely present how the M4A1 unlocks the ACR, which
+in turn unlocks the MK14. Custom test suites were being developed throughout
+the development, injecting over 50 test cases to affirm correctness, vital to
+discovering edge cases in my recursive algorithms.
 
 \section{Diagram/Figure}
 
-The knowledgebase architecture follows a layered approach with clear separation
-of concerns, as illustrated in Figure 1. The system is organized into multiple
-interconnected layers that handle different aspects of the weapon ecosystem.
-
-% Note: Use -- for en-dash or --- for em-dash in LaTeX for proper dash usage.
+The knowledge base architecture is built on a layering approach with separation
+of concerns, as shown in Figure 1. The system consists of several
+interconnected layers that handle the various facets of the weapon ecosystem.
 
 \begin{figure}[H]
     \centering
@@ -259,17 +243,22 @@ interconnected layers that handle different aspects of the weapon ecosystem.
 
 \subsection{System Architecture Components}
 
-\textbf{Core Facts Database Layer} forms the foundation with four primary databases: Weapons Database containing 121 weapon facts with detailed attributes, Attachments Database with 49 attachments across 8 categories, Game Mechanics encompassing 26 mechanics across 5 types, and Progression Chains managing 28 unlock relationships for recursive analysis.
-
-\textbf{Weapon Classification System} provides multi-dimensional categorization including weapon types (assault rifles, sniper rifles, submachine guns, shotguns, marksman rifles, battle rifles, pistols, light machine guns), era classification spanning Classic (2003-2017), Modern (2007-2019), and Advanced (2014-2024) periods, and role classification distinguishing between primary/secondary weapons and close quarters/long range applications.
-
-\textbf{Attachment System} manages attachment types across optics, barrels, stocks, underbarrels, magazines, muzzles, lasers, and perks, implements an effects system for damage boost, accuracy enhancement, recoil reduction, stealth capabilities, and range enhancement, and maintains a compatibility matrix using weapon\_attachment/3 predicate with a 1-5 rating system.
-
-\textbf{Recursive Rule Engine} implements sophisticated algorithms for unlock progression analysis through predicates like can\_unlock\_eventually/2 and unlock\_chain/2, provides depth analysis capabilities with progression\_depth/2 and longest\_chain\_from/2, and manages attachment progression chains via attachment\_unlock\_chain/2 and can\_unlock\_attachment\_eventually/2.
-
-\textbf{Query Interface Layer} offers comprehensive access through 30+ predicates organized into basic queries (gun\_type/2, gun\_damage/2), classification queries (modern\_era\_guns/1, primary\_weapon/1), attachment queries (compatible\_attachments/2, stealth\_attachments/1), and optimization queries (optimal\_damage\_build/2, versatile\_weapons/1).
-
-\textbf{Advanced Analysis Layer} provides statistical analysis capabilities for counting weapons by type and identifying patterns, along with build optimization algorithms for recommending optimal weapon configurations for specific scenarios.
+The knowledgebase was designed following a simple-yet-powerful architecture,
+reflecting the way I actually think about weapons while gaming. At its heart
+lies a complete database of 121 weapons with stats, 49 attachments, and 26 game
+mechanics, but the real beauty lies in how these are interrelated. For
+instance, the system is capable of dealing with the fact that an M4A1 falls
+simultaneously into the category of assault rifle and modern-era weapon, while
+also being a general purpose weapon adaptable to a number of different
+playstyles. What I cherish most in my system is the recursive engine that can
+trace complex paths of unlocks like M4A1 → ACR → MK14, and the recommendation
+system that uses various criteria and suggests builds from stealth, damage, and
+accuracy. Instead of forcing the user to create complicated Prolog queries, I
+created more than 30 predicates that answer natural questions gamers ask, like
+"What's the fastest way to unlock the XM4?" or "Which attachments make this gun
+better for close-quarters combat?" It's like having a gaming friend who pros
+the knowledge of every weapon stat and unlock path in two decades' worth of
+Call of Duty titles.
 
 \subsection{Weapon Classification Hierarchy}
 
@@ -519,46 +508,24 @@ Mechanic = weapon_blueprints ;
 Mechanic = camo_challenges.
 \end{lstlisting}
 
-\section{Conclusion and Challenges}
+\section{Conclusion}
 
-\subsection{Project Achievements}
-
-This Call of Duty Weapon Knowledgebase successfully demonstrates Prolog's
-capabilities for modeling complex, interconnected systems. The implementation
-incorporates sophisticated recursive algorithms, multi-dimensional
-classification systems, and optimization frameworks that showcase advanced
-logical programming concepts.
-
-\textbf{Key Accomplishments}:
-\begin{enumerate}
-    \item \textbf{Comprehensive Data Model}: Successfully modeled 121 weapons, 49 attachments, and 26 game mechanics spanning 21 years of gaming history.
-    \item \textbf{Advanced Recursive Systems}: Implemented sophisticated recursive rules for progression analysis and optimization algorithms.
-    \item \textbf{Multi-Dimensional Analysis}: Created flexible classification systems for era, type, role, and performance analysis.
-    \item \textbf{Practical Applications}: Developed optimization algorithms providing real-world weapon build recommendations.
-\end{enumerate}
-
-\subsection{Technical Challenges and Solutions}
-
-\textbf{Recursive Query Optimization}: Initial performance issues with deep unlock trees were resolved through tail-recursive optimizations and memoization techniques.
-
-\textbf{Attachment Compatibility Matrix}: The complex relationship between 121 weapons and 49 attachments was managed using a 1-5 rating system for nuanced compatibility assessment.
-
-\textbf{Era Classification Ambiguity}: Overlapping game characteristics were handled through flexible classification rules allowing multiple era memberships.
-
-\textbf{Query Performance}: Complex recursive operations were optimized through strategic fact ordering and rule optimization.
-
-\subsection{Educational Value and Future Work}
-
-This project demonstrates Prolog's effectiveness for knowledge representation,
-recursive logic implementation, expert system development, and data pattern
-extraction. Future enhancements could include machine learning integration for
-predictive recommendations, performance optimization through constraint logic
-programming, web interface development, and real-time API connections for
-dynamic updates.
-
-The project showcases that Prolog remains highly relevant for modern
-knowledge-based systems, particularly in domains involving complex
-relationships and logical inference. This knowledgebase serves as both an
-educational resource and a foundation for future gaming analytics research.
+Building this Call of Duty weapon knowledge base has been one funky journey
+that surpassed my expectations. Initially, the idea had been to simply present
+data about weapons, but over time, that simple premise grew into a complex
+system harboring 121 weapons, 49 attachments, and 30+ smart queries that can
+now answer questions I've entertained while gaming! The recursive unlocking
+system was just the crowning glory-Made prolog trace unlock paths like M4A1 →
+ACR → MK14 in one glare of an eye-like magic. I did get into real problems with
+performance tuning, attachment compatibility rating, full-fledged testing, and
+all sorts of things, but every single problem that popped up was a
+very-nice-teacher-allied-with-me lesson-on-prolog-to-ensure-productivity. The
+project so much enhanced my outlook over logic programming to merely an
+academic curiosity into an efficacious tool for modeling very complicated
+relationships. The biggest surprise came with the knowledge that this
+knowledgebase is actually practical for gaming support; I have used it for
+planning unlock strategies and build recommendations that genuinely help my
+gameplay. It is a testament that when passion for a subject is coupled with the
+right programming tools, something bridging academic
 
 \end{document}
